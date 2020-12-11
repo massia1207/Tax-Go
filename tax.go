@@ -23,7 +23,7 @@ type Taxes interface {
 }
 
 func Calc(t Taxes) {
-	fmt.Println(t.fedTax())
+	fmt.Println(t.FedTax())
 }
 
 func (tp Taxpayer) FedTax() float64 {
