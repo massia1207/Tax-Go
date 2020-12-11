@@ -19,7 +19,7 @@ type Bracket struct {
 }
 
 type Taxes interface {
-	fedTax() float64
+	FedTax() float64
 }
 
 func Calc(t Taxes) {
