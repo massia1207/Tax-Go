@@ -1,5 +1,9 @@
 package Tax-Go
 
+import(
+	"fmt"
+	"math"
+)
 
 type taxpayer struct {
 	Name   string
