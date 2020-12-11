@@ -19,14 +19,14 @@ type Bracket struct {
 }
 
 type Taxes interface {
-	FedTax() float64
+	fedTax() float64
 }
 
 func Calc(t Taxes) {
-	fmt.Println(t.FedTax())
+	fmt.Println(t.fedTax())
 }
 
-func (tp Taxpayer) FedTax() float64 {
+func (tp Taxpayer) fedTax() float64 {
 	r := make(map[int][]float64)
 	r[2020] = []float64{.1, .12, .22, .24, .32, .35, .37}
 	br := make(map[int][]Bracket)
