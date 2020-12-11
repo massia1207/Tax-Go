@@ -1,4 +1,4 @@
-package TaxGo
+package taxgo 
 
 import(
 	"fmt"
@@ -26,7 +26,7 @@ func Calc(t Taxes) {
 	fmt.Println(t.fedTax())
 }
 
-func (tp Taxpayer) fedTax() float64 {
+func (tp Taxpayer) FedTax() float64 {
 	r := make(map[int][]float64)
 	r[2020] = []float64{.1, .12, .22, .24, .32, .35, .37}
 	br := make(map[int][]Bracket)
