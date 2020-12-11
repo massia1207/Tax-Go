@@ -22,7 +22,7 @@ type Taxes interface {
 	fedTax() float64
 }
 
-func Calc(t taxes) {
+func Calc(t Taxes) {
 	fmt.Println(t.fedTax())
 }
 
