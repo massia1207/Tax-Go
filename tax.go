@@ -1,4 +1,4 @@
-package Tax-Go
+package TaxGo
 
 import(
 	"fmt"
