@@ -32,7 +32,9 @@ func (tp Taxpayer) fedTax() float64 {
 	br := make(map[int][]Bracket)
 	br[2020] = []Bracket{
 		{"IND", []float64{0, 9875, 40125, 85525, 163300, 207350, 518400}},
+		{"MFS", []float64{0, 9875, 40125, 85525, 163300, 207350, 311025}},
 		{"MFJ", []float64{0, 19750, 80250, 171050, 326600, 414700, 622050}},
+		{"HOH", []float64{0, 14100, 53700, 85500, 163300, 207350, 518400}},
 	}
 	var tax float64
 	var myBrackets []float64
